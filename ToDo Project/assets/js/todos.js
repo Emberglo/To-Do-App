@@ -6,7 +6,7 @@ $("ul").on("click", "li", function() {
 //When you click the X, delete the whole To-Do
 $("ul").on("click", "span", function(event) {
 	//.parent() selects li, then runs fade out
-	$(this).parent().fadeOut(500, function(){
+	$(this).parent().fadeOut(500, function() {
 		//removes li after fadeout complete
 		$(this).remove();
 	});
@@ -21,8 +21,8 @@ $("input[type='text']").keypress(function(event) {
 		//empty the input
 		$(this).val("");
 		//create new li and add to ul
-		//.append() takes a string of html and adds it to whatever you selected
 		$("ul").append("<li><span><i class="material-icons">delete</i></span> " + todoText + "</li>")
+		//.append() takes a string of html and adds it to whatever you selected
 	};
 });
 

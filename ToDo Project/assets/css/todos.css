@@ -32,6 +32,17 @@ li {
 	color: #666;
 }
 
+/* nth-child specifies every other one */
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+/*chanes the width of the span inside the li when hovered over */
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+
 span {
 	background: #F99388;
 	height: 40px;
@@ -44,17 +55,6 @@ span {
 	transition: 0.2s linear;
 	/*opacity makes the icon in the span not visible if you aren't hovering */
 	opacity: 0;
-}
-
-/* nth-child specifies every other one */
-li:nth-child(2n){
-	background: #f7f7f7;
-}
-
-/*chanes the width of the span inside the li when hovered over */
-li:hover span {
-	width: 40px;
-	opacity: 1;
 }
 
 input {
