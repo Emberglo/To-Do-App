@@ -21,7 +21,7 @@ $("input[type='text']").keypress(function(event) {
 		//empty the input
 		$(this).val("");
 		//create new li and add to ul
-		$("ul").append("<li><span><i class="material-icons">delete</i></span> " + todoText + "</li>")
+		$("ul").append("<li><span><i class='material-icons'>delete</i></span> " + todoText + "</li>")
 		//.append() takes a string of html and adds it to whatever you selected
 	};
 });
